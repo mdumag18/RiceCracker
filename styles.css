@@ -19,23 +19,108 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:inline-block;
+    float: left;
+    horizontal-align:center;
+    vertical-align: center;
+}
+
+header .mainlogo {
+    width: 40%;
+    height: 60px;
+
+    padding-left: 10px;
+    display:inline-block;
+    float: left;
+    horizontal-align:center;
+    vertical-align: center;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    margin-right: 1rem;
-}
-
-header nav ul li {
-    margin-left: 1rem;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.links {
+  height: 60px;
+  margin: 0 5 px;
+  padding: 0px;
+  list-style: none;
+  display:inline-block;
+  horizontal-align:center;
+}
+
+.links li {
+  margin: 0px;
+}
+
+.links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.links li a:hover {
+    background-color: black;
+    color: palegoldenrod;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.barmenu {
+  width: 40%;
+  height: 60px;
+  margin: 10px;
+  padding: 10 px;
+  display:inline-block;
+  vertical-align: center;
+  horizontal-align:center;
+  align-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: lighter;
+}
+
+.barmenu a:active, a:link, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.barmenu a:hover{
+  text-decoration: none;
+  color: palegoldenrod;
+}
+
+.barmenu b{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: lighter;
 }
 
 .hero {
@@ -54,15 +139,6 @@ header nav ul li a {
     font-size: 2rem;
 }
 
-.hero button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
 
 .featured-products, .services, .testimonials {
     padding: 2rem 1rem;
